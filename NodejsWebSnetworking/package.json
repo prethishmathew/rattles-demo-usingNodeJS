@@ -1,10 +1,15 @@
 {
   "name": "NodejsWebSnetworking",
   "version": "0.0.0",
-  "description": "NodejsWebSnetworking",
+  "description": "My Rattles prototype Demo",
   "main": "server.js",
   "author": {
     "name": "pmathew",
     "email": ""
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "vash": "^0.11.1"
   }
 }

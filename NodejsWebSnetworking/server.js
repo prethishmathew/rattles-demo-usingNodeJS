@@ -1,6 +1,16 @@
-﻿var http = require('http');
-var port = process.env.port || 1337;
-http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello World\n');
-}).listen(port);
+﻿var http = require("http");
+var express = require("express");
+var app = express();
+
+//Set up the View engine in Express
+app.set("view engine", "vash");
+
+var server = http.createServer(app);
+
+app.get("/", function(req, res) {
+
+   // res.send("<html><body><b>From Prads Express</b></body></html>");
+    res.render("vash/index", { title: "Prads Express + Vash" });
+});
+
+server.listen(3000);
