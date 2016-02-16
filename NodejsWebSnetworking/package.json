@@ -1,0 +1,10 @@
+{
+  "name": "NodejsWebSnetworking",
+  "version": "0.0.0",
+  "description": "NodejsWebSnetworking",
+  "main": "server.js",
+  "author": {
+    "name": "pmathew",
+    "email": ""
+  }
+}
